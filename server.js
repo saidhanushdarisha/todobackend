@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://todofrontend-five-delta.vercel.app/',
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   credentials: true
 }));
